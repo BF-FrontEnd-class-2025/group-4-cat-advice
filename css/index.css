@@ -6,7 +6,57 @@
     box-sizing: border-box;
 }
 
+header {
+    margin: 40px 0;
+}
+
+#cat-pic {
+    height: auto;
+    width: 400px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #565454;
+    background-color: #ffff9f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions {
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button {
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#give-advice {
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: rgb(247, 241, 234);
+}
+
+#give-advice:hover {
+    background-color: #f2b559;
+}
+
+.display {
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    font-family: fantasy;
+    font-size: 1.2rem;
 }
