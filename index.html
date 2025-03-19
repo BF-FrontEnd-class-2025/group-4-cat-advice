@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -8,6 +8,39 @@
         <title>JS starter</title>
     </head>
     <body>
+        <header>
+            <h1>Get advice about cat</h1>
+        </header>
+        <img id="cat-pic" src="./src/white-cat-sunglasses.jpg" alt="cat" />
+        <section>
+            <div class="questions">
+                Do you like cats?
+                <input id="likes-cats" type="checkbox" />
+            </div>
+
+            <br />
+
+            <div class="questions">
+                Are you allergic to cats?
+                <input id="is-allergic" type="checkbox" />
+            </div>
+
+            <br />
+
+            <div class="questions">
+                Do you own a cat?
+                <input id="owns-one" type="checkbox" />
+            </div>
+
+            <br />
+
+            <div class="button">
+                <button id="give-advice">Get Advice</button>
+            </div>
+        </section>
+        <div class="display">
+            <p id="message"></p>
+        </div>
         <script src="./src/index.js"></script>
     </body>
 </html>
