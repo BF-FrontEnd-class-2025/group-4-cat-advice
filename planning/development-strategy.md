@@ -101,4 +101,3 @@
 
 - [ ] Explain moderation guidelines for submitted stories
 - [ ] Provide API details for retrieving and submitting stories
-

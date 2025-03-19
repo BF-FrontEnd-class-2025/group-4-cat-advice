@@ -1,10 +1,29 @@
 /**
- * Check if a number is even
+ * Check if you like cats
  *
- * @param {number} num - The number to check if it is even
- * @returns {boolean} - True if the number is even, false otherwise
+ * @param {boolean} [likes = false] - id checkbox
+ * @param {boolean} [allergic = false] - id checkbox
+ * @param {boolean} [owns = false] - id checkbox
+ * @returns {string} - advice to the cats
  */
 
-const isEven = (num) => num % 2 === 0;
-
-export default isEven;
+export function aboutCats(likes = false, allergic = false, owns = false) {
+    let result = '';
+    likes && allergic && owns
+        ? (result = 'replace your cat with a stuffed animal')
+        : likes && allergic && !owns
+          ? (result = 'make a friend who has a cat')
+          : likes && !allergic && owns
+            ? (result = 'you are doing great')
+            : likes && !allergic && !owns
+              ? (result = 'get a cat')
+              : !likes && allergic && owns
+                ? (result = 'rethink your life choices')
+                : !likes && allergic && !owns
+                  ? (result = 'you are doing great')
+                  : !likes && !allergic && owns
+                    ? (result = 'you could be doing worse')
+                    : // result = !likes && !allergic && !owns
+                      'you are doing great';
+    return result;
+}
